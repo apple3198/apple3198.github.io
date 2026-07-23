@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub保姆级使用指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        :root {
+            --bg-main: #121212;
+            --bg-card: #1e1e1e;
+            --bg-hover: #2d2d2d;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #6366f1;
+            --border: #333333;
+        }
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            padding: 24px;
+            line-height: 1.7;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+        h1 {
+            color: var(--accent);
+            margin-bottom: 8px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .section {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+        h2 {
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        h3 {
+            margin: 16px 0 8px;
+            font-size: 17px;
+            color: #e0e0e0;
+        }
+        p, li {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        pre {
+            background: #0f0f0f;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        code {
+            color: #a5d6ff;
+            font-family: Consolas, monospace;
+        }
+        .tip {
+            background: rgba(99, 102, 241, 0.15);
+            border-left: 4px solid var(--accent);
+            padding: 10px 14px;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GitHub保姆级使用指南</h1>
+        <div class="subtitle">新手从零入门，访问、搜索、部署、开源协作全流程</div>
+    </header>
+
+    <div class="section">
+        <h2>1. GitHub简介与重要性</h2>
+        <ul>
+            <li>全球最大开源代码社区，全球开发者超1亿，公开仓库超4亿，是开发者必备平台</li>
+            <li>资源覆盖：免费软件、AI项目、编程教程、电子书、毕业设计源码、工具脚本</li>
+            <li>核心价值：免费托管代码、搭建个人主页、参与开源协作、获取行业优质项目、实现静态网站免费部署</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. 网络加速与访问优化</h2>
+        <h3>Watt Toolkit（原Steam++）加速方案</h3>
+        <ol>
+            <li>下载安装：微软商店或官网下载Watt Toolkit，Windows/macOS/Linux全平台支持</li>
+            <li>加速操作：打开软件，勾选GitHub相关服务，点击「一键加速」即可正常访问</li>
+            <li>Mac/Linux终端可执行官方一键加速脚本，配置hosts优化访问链路</li>
+        </ol>
+        <div class="tip">备用方案：浏览器安装GitHub加速插件，提升仓库克隆、文件下载速度</div>
+    </div>
+
+    <div class="section">
+        <h2>3. 账号注册、安全设置与界面汉化</h2>
+        <h3>注册与安全（必做）</h3>
+        <ul>
+            <li>邮箱注册并完成验证，设置高强度密码，建议使用密码管理器保存</li>
+            <li>强制开启2FA双重认证：头像→Settings→Password and authentication，绑定谷歌验证器，妥善保存16位恢复码</li>
+            <li>地区选择海外地区，避免部分功能权限受限</li>
+        </ul>
+        <h3>界面汉化方案</h3>
+        <ul>
+            <li>网页汉化：安装篡改猴脚本，搜索GitHub汉化插件，实现全站菜单汉化</li>
+            <li>内容翻译：浏览器安装沉浸式翻译，自动翻译项目README、英文文档</li>
+            <li>客户端汉化：GitHub Desktop可通过语言补丁实现界面汉化</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. 高级资源搜索技巧</h2>
+        <h3>三大核心搜索方法</h3>
+        <ul>
+            <li>关键词精准搜索：<code>awesome + 领域关键词</code>，例：<code>awesome AI</code>、<code>awesome python</code>，获取领域优质项目合集</li>
+            <li>Explore探索页筛选：按星标Star、更新时间、编程语言筛选，优先高星、近期更新的活跃项目</li>
+            <li>筛选语法：<code>stars:>1000</code> 筛选千星以上项目，<code>language:Python</code> 指定编程语言搜索</li>
+            <li>AI辅助检索：向AI描述需求，直接获取精准仓库链接，减少无效搜索</li>
+        </ul>
+        <div class="tip">项目甄别：优先查看星标数量、最后更新时间、Issue活跃度、README完整性，判断项目是否长期维护</div>
+    </div>
+
+    <div class="section">
+        <h2>5. 项目下载、运行与本地部署</h2>
+        <ul>
+            <li>网页直接下载：仓库Code按钮→Download ZIP，一键打包下载全部源码</li>
+            <li>Git克隆命令：<pre><code>git clone 仓库地址</code></pre></li>
+            <li>先阅读README文档，确认环境要求、安装步骤，避免盲目下载</li>
+            <li>优先下载Release正式发行版，避免开发版源码出现兼容性问题</li>
+            <li>环境报错可截图信息，交由AI辅助排查依赖问题</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. 基础开发者核心操作</h2>
+        <h3>6.1 创建个人仓库</h3>
+        <ol>
+            <li>右上角「+」→New Repository，填写仓库名称、描述</li>
+            <li>Public公开仓库 / Private私有仓库按需选择</li>
+            <li>勾选Add README初始化说明文档，.gitignore选择对应编程语言模板，许可证默认MIT即可</li>
+            <li>个人主页仓库命名必须严格为：<code>用户名.github.io</code></li>
+        </ol>
+
+        <h3>6.2 本地文件上传GitHub基础命令</h3>
+        <pre><code>git init                  # 初始化本地Git仓库
+git add .                 # 添加所有文件到暂存区
+git commit -m "第一次提交项目"  # 提交变更，备注说明
+git push -u origin main   # 推送到远程GitHub仓库</code></pre>
+
+        <h3>6.3 分支与协作基础</h3>
+        <ul>
+            <li>main主分支存放稳定线上版本，禁止直接修改</li>
+            <li>新建功能分支：<code>git checkout -b dev</code>，开发完成后合并回主分支</li>
+            <li>多人协作先拉取最新代码再合并，避免代码冲突覆盖</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. GitHub Pages免费静态网站部署</h2>
+        <h3>个人主页站点部署</h3>
+        <ol>
+            <li>创建仓库，名称固定为 <code>用户名.github.io</code>，设为公开仓库</li>
+            <li>上传index.html、CSS、JS等静态资源文件</li>
+            <li>仓库Settings→Pages，部署源选择main分支，保存后等待生效</li>
+            <li>访问地址：<code>https://你的用户名.github.io</code></li>
+        </ol>
+        <h3>普通项目站点部署</h3>
+        <ul>
+            <li>任意仓库开启Pages，分支选择main或gh-pages</li>
+            <li>访问地址：<code>https://用户名.github.io/仓库名</code></li>
+            <li>支持绑定自定义域名，实现专属网址访问</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. 开源协作：Issue与Pull Request</h2>
+        <h3>Issue使用</h3>
+        <p>仓库Issues面板→New Issue，清晰填写标题、问题描述、复现步骤、截图，用于bug反馈、功能建议、文档纠错，是开源项目核心沟通渠道。</p>
+        <h3>Fork与PR贡献代码</h3>
+        <ol>
+            <li>Fork目标仓库到自己账号，本地修改代码</li>
+            <li>提交修改后发起Pull Request，等待原作者审核合并</li>
+            <li>提交前同步上游最新代码，commit备注清晰，符合项目规范</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>9. 新手高频问题与避坑指南</h2>
+        <ul>
+            <li>访问卡顿：优先使用Watt Toolkit加速，避免频繁切换节点，防止IP风控</li>
+            <li>大文件上传：单个文件超过100M需使用Git LFS存储，否则上传失败</li>
+            <li>妥善保存2FA恢复码，丢失将无法登录账号</li>
+            <li>Pages部署不生效：等待5–10分钟缓存刷新，检查分支选择是否正确</li>
+            <li>严禁上传密码、密钥、本地路径等敏感信息到公开仓库</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>10. 进阶实用功能</h2>
+        <ul>
+            <li>Star收藏：给优质项目点赞收藏，方便后续查找</li>
+            <li>Watch订阅：实时接收项目更新、Issue动态</li>
+            <li>Gists：快捷分享代码片段，存放临时脚本、笔记</li>
+            <li>Copilot：GitHub AI编程助手，辅助代码编写、bug排查</li>
+            <li>Projects：项目看板，实现任务管理、开发流程可视化</li>
+        </ul>
+    </div>
+
+    <footer>
+        GitHub使用指南 © 2026 | 适配深色模式，可直接部署至GitHub Pages
+    </footer>
+</body>
+</html>
