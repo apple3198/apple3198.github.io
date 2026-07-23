@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国人寿辛集支公司｜火热招聘 辛集万达广场B座</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        redMain: '#c8102e',
+                        goldMain: '#b88628',
+                        lightGold: '#f9f3e8',
+                        darkGray: '#222831'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {scroll-behavior: smooth;}
+        .bg-banner{
+            background: linear-gradient(135deg, #c8102e 0%, #9c0c24 100%);
+        }
+        .card-hover{
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(200,16,46,0.15);
+        }
+        .animate-fade{
+            animation: fadeIn 0.8s ease forwards;
+        }
+        @keyframes fadeIn{
+            from{opacity:0;transform:translateY(25px)}
+            to{opacity:1;transform:translateY(0)}
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-darkGray">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 left-0 w-full bg-white/95 shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shield-heart text-redMain text-2xl"></i>
+                    <span class="font-bold text-lg md:text-xl">中国人寿·辛集支公司</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm">
+                    <a href="#home" class="hover:text-redMain transition-colors">首页</a>
+                    <a href="#post" class="hover:text-redMain transition-colors">招聘岗位</a>
+                    <a href="#benefit" class="hover:text-redMain transition-colors">福利待遇</a>
+                    <a href="#about" class="hover:text-redMain transition-colors">公司简介</a>
+                    <a href="#contact" class="hover:text-redMain transition-colors">在线报名</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuBtn"><i class="fa-solid fa-bars text-xl"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端下拉菜单 -->
+        <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden border-t">
+            <div class="flex flex-col gap-3 pt-3">
+                <a href="#home">首页</a>
+                <a href="#post">招聘岗位</a>
+                <a href="#benefit">福利待遇</a>
+                <a href="#about">公司简介</a>
+                <a href="#contact">在线报名</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏Banner -->
+    <section id="home" class="bg-banner pt-24 pb-20 md:pt-32 md:pb-28 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="animate-fade">
+                    <span class="px-3 py-1 bg-white/20 rounded-full text-sm">辛集万达广场B座 · 直招</span>
+                    <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mt-4 leading-tight">
+                        中国人寿辛集支公司<br/>
+                        广纳英才 携手共赢
+                    </h1>
+                    <p class="mt-5 text-white/85 text-lg max-w-xl">
+                        本地成熟团队、公平晋升通道、弹性工作时间，不用远走他乡，在家门口实现收入提升，辛集本地人优先录取。
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-goldMain px-7 py-3 rounded-lg font-medium hover:opacity-90 transition">立即在线报名</a>
+                        <a href="#post" class="border border-white px-7 py-3 rounded-lg font-medium hover:bg-white/10 transition">查看招聘岗位</a>
+                    </div>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-goldMain"></i>
+                            <span>辛集万达广场B座</span>
+                        </div>
+                        <a href="tel:18132029286" class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-goldMain"></i>
+                            <span>18132029286</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="w-full h-72 bg-white/10 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-building-shield text-white text-9xl opacity-80"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 招聘岗位板块 -->
+    <section id="post" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.7rem,3vw,2.5rem)] font-bold text-darkGray">热门招聘岗位</h2>
+                <div class="w-20 h-1 bg-redMain mx-auto mt-3"></div>
+                <p class="text-gray-500 mt-4">门槛友好、零基础可带，专人一对一带教</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 岗位1 -->
+                <div class="card-hover bg-lightGold p-8 rounded-xl">
+                    <div class="w-12 h-12 rounded-full bg-redMain/10 flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-user-group text-redMain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">客户经理</h3>
+                    <p class="text-goldMain font-semibold mt-2">综合薪资：4000-12000元/月</p>
+                    <ul class="mt-4 text-gray-600 space-y-2 text-sm">
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>维护本地客户，提供保险理财咨询服务</li>
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>公司提供精准客源，不用盲目陌拜</li>
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>带薪培训，零基础快速上手</li>
+                    </ul>
+                </div>
+                <!-- 岗位2 -->
+                <div class="card-hover bg-lightGold p-8 rounded-xl">
+                    <div class="w-12 h-12 rounded-full bg-redMain/10 flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-chart-line text-redMain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">金融理财顾问</h3>
+                    <p class="text-goldMain font-semibold mt-2">综合薪资：5000-15000元/月</p>
+                    <ul class="mt-4 text-gray-600 space-y-2 text-sm">
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>为本地家庭配置稳健理财保障方案</li>
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>定期行业大咖分享会，提升财商</li>
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>多劳多得，上不封顶</li>
+                    </ul>
+                </div>
+                <!-- 岗位3 -->
+                <div class="card-hover bg-lightGold p-8 rounded-xl">
+                    <div class="w-12 h-12 rounded-full bg-redMain/10 flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-crown text-redMain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">储备主管</h3>
+                    <p class="text-goldMain font-semibold mt-2">管理岗底薪+团队提成</p>
+                    <ul class="mt-4 text-gray-600 space-y-2 text-sm">
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>搭建个人团队，走向管理路线</li>
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>总部统一管理培训，快速晋升</li>
+                        <li><i class="fa-solid fa-check text-redMain mr-2"></i>团队管理津贴+长期被动收益</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 八大福利板块 -->
+    <section id="benefit" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.7rem,3vw,2.5rem)] font-bold">八大优厚福利保障</h2>
+                <div class="w-20 h-1 bg-redMain mx-auto mt-3"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-graduation-cap text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">免费带薪培训</h4>
+                    <p class="text-gray-500 text-sm mt-2">全阶段系统化教学</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-calendar-days text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">弹性作息时间</h4>
+                    <p class="text-gray-500 text-sm mt-2">兼顾家庭与工作</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-money-bill-trend-up text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">无上限提成</h4>
+                    <p class="text-gray-500 text-sm mt-2">多劳多得，收入自主</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-ranking-star text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">透明晋升通道</h4>
+                    <p class="text-gray-500 text-sm mt-2">不靠关系，凭能力晋升</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-plane-departure text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">年度旅游奖励</h4>
+                    <p class="text-gray-500 text-sm mt-2">国内外团建出游</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-gift text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">节日礼品福利</h4>
+                    <p class="text-gray-500 text-sm mt-2">节假日福利发放</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-users text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">本地精英团队</h4>
+                    <p class="text-gray-500 text-sm mt-2">辛集熟人圈子互帮互助</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <i class="fa-solid fa-medal text-redMain text-3xl"></i>
+                    <h4 class="font-bold mt-4">月度荣誉激励</h4>
+                    <p class="text-gray-500 text-sm mt-2">奖金+奖杯双重奖励</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司简介 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-lightGold rounded-2xl h-80 flex items-center justify-center">
+                    <i class="fa-solid fa-building-columns text-redMain text-8xl opacity-70"></i>
+                </div>
+                <div>
+                    <h2 class="text-[clamp(1.7rem,3vw,2.5rem)] font-bold">中国人寿辛集支公司</h2>
+                    <div class="w-16 h-1 bg-redMain mt-3 mb-6"></div>
+                    <p class="text-gray-600 leading-relaxed">
+                        中国人寿为国有大型金融保险集团，辛集支公司坐落于万达广场B座，扎根辛集本地多年，服务上万辛集家庭。
+                        现面向辛集全城招募有志之士，不限学历、不限过往行业，只要踏实肯干、善于沟通，均可入职培养。
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mt-4">
+                        我们不画大饼，收入透明、晋升公开，老员工一对一带新人，让你在家门口拥有稳定且高薪的事业，不用背井离乡外出打工。
+                    </p>
+                    <div class="mt-8 flex gap-6">
+                        <div>
+                            <div class="text-3xl font-bold text-redMain">75+</div>
+                            <div class="text-sm text-gray-500">在职本地员工</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-redMain">8年</div>
+                            <div class="text-sm text-gray-500">辛集本地深耕经营</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-redMain">10000+</div>
+                            <div class="text-sm text-gray-500">服务辛集家庭</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在线报名表单 -->
+    <section id="contact" class="py-20 bg-banner text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <h2 class="text-[clamp(1.7rem,3vw,2.5rem)] font-bold">在线投递简历 免费预约面试</h2>
+                <p class="mt-3 opacity-85">填写信息，专人1个工作日内与你电话联系</p>
+            </div>
+            <div class="max-w-xl mx-auto bg-white/10 backdrop-blur p-8 rounded-2xl">
+                <form id="applyForm" class="space-y-5">
+                    <div>
+                        <label class="block mb-2 text-sm">您的姓名</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 outline-none focus:border-goldMain" placeholder="请填写真实姓名">
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm">联系电话</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 outline-none focus:border-goldMain" placeholder="填写手机号方便联系">
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm">意向岗位</label>
+                        <select class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 outline-none">
+                            <option>客户经理</option>
+                            <option>金融理财顾问</option>
+                            <option>储备主管</option>
+                            <option>暂时不确定，推荐合适岗位</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm">年龄/简单自我介绍</label>
+                        <textarea rows="3" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 outline-none resize-none" placeholder="简单写一下年龄、过往工作经历"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-goldMain py-4 rounded-lg font-bold text-lg hover:opacity-90 transition">
+                        提交报名信息
+                    </button>
+                </form>
+                <div id="successTip" class="hidden text-center mt-6 text-lg text-green-200">
+                    <i class="fa-solid fa-check-circle"></i> 提交成功！我们将尽快与您联系
+                </div>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-3 gap-6 text-center">
+                <div>
+                    <i class="fa-solid fa-location-dot text-3xl text-goldMain"></i>
+                    <p class="mt-3 font-medium">公司地址</p>
+                    <p class="opacity-80 text-sm mt-1">辛集万达广场B座 中国人寿</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone text-3xl text-goldMain"></i>
+                    <p class="mt-3 font-medium">联系电话</p>
+                    <a href="tel:18132029286" class="opacity-80 text-sm mt-1">18132029286</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clock text-3xl text-goldMain"></i>
+                    <p class="mt-3 font-medium">面试时间</p>
+                    <p class="opacity-80 text-sm mt-1">周一至周五 9:00-17:30</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-darkGray text-gray-300 py-10 text-center text-sm">
+        <p>中国人寿辛集支公司 招聘官网 | 地址：辛集万达广场B座</p>
+        <p class="mt-2">联系电话：18132029286 | 本页面仅用于本地招聘</p>
+        <p class="mt-4 text-gray-500">© 2026 版权所有</p>
+    </footer>
+
+    <script>
+        // 移动端菜单开关
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click',()=>{
+            mobileMenu.classList.toggle('hidden');
+        })
+        // 表单提交提示
+        const form = document.getElementById('applyForm');
+        const tip = document.getElementById('successTip');
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            form.reset();
+            tip.classList.remove('hidden');
+            setTimeout(()=>tip.classList.add('hidden'),4000);
+        })
+    </script>
+</body>
+</html>
